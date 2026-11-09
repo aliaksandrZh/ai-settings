@@ -1,12 +1,12 @@
 # Main
 
-**MANDATORY: All rules in this document and their referenced files are binding instructions. You MUST read, understand, and follow them throughout the entire session. They are not optional guidelines.**
+**MANDATORY: All rules listed in the Index below are binding instructions. You MUST read, understand, and follow them throughout the entire session. They are not optional guidelines.**
 
 These rules apply to every task, regardless of its complexity, urgency, or perceived importance.
 
 ## Rule Enforcement
 
-1. **Read before acting.** Before starting any task, read ALL rules listed in the Index and their referenced files. Never rely on summaries, assumptions, or previously loaded instructions.
+1. **Follow the rules, not their summaries.** The full text of every rule in the Index is already in your context. Apply that text on every task — never from a title, an assumption, or an earlier impression of what a rule says.
 2. **No exceptions by assumption.** Never ignore, bypass, reinterpret, or selectively follow a rule because you believe it is unnecessary or inconvenient.
 3. **Conflict resolution.** If instructions conflict with each other, project requirements, user requests, or applicable skills, STOP. Explain the exact conflict and ask the user which instruction takes precedence. Do not proceed until clarified.
 4. **Unclear instructions.** If a rule or requirement is ambiguous, ask the user rather than choosing an interpretation yourself.
@@ -19,22 +19,22 @@ These rules apply to every task, regardless of its complexity, urgency, or perce
 
 ## Behavioral Rules
 
-Behavioral rules for AI agents working in this project. Each rule is stored in its own file under `guides/rules/` with a memory-style frontmatter (`name`, `description`). Read the referenced file before acting on a rule — this index is a pointer, not the rule text.
+Behavioral rules for AI agents working in this project. Each rule is stored in its own file under `guides/rules/` with a memory-style frontmatter (`name`, `description`). Their contents are provided at session start — read them there, and open a file only if that content is missing.
 
 ## Index
 
-| # | Rule | Description | Reference |
-|---|---|---|---|
-| 1 | Core Principle: User Control | The user has full control over all actions and decisions. | `guides/rules/core-principle.md` [READ] |
-| 2 | Question-Only Mode | Questions require answers only. Never take action unless explicitly requested. | `guides/rules/question-only-mode.md` [READ] |
-| 3 | Explicit Approval Required | Obtain explicit approval before modifying files, code, dependencies, configuration, or project state. | `guides/rules/explicit-approval.md` [READ] |
-| 4 | Process Execution and Command Restrictions | Never execute commands or start processes without approval. Stop all processes you started. | `guides/rules/process-execution.md` [READ] |
-| 5 | File System Restrictions | Work only inside the project directory. Never create or modify files outside it. | `guides/rules/file-system.md` [READ] |
-| 6 | Project Inspection and Existing Changes | Inspect the project and preserve existing user changes before implementation. | `guides/rules/project-inspection.md` [READ] |
-| 7 | Skills, MCP and Reference Documentation | Read and follow all applicable skills and their mandatory reference files. | `guides/rules/skills-and-references.md` [READ] |
-| 8 | Scope Containment | Make only approved changes. No unrelated fixes, refactoring, or improvements. | `guides/rules/scope-containment.md` [READ] |
-| 9 | Handling Uncertainty | Never guess. Ask the user when requirements or instructions are unclear. | `guides/rules/handling-uncertainty.md` [READ] |
-| 10 | Error Handling and Recovery | Stop on errors. Report problems and obtain approval before recovery actions. | `guides/rules/error-handling.md` [READ] |
-| 11 | Cleanup | Remove temporary artifacts and stop processes you started, without affecting user files. | `guides/rules/cleanup.md` [READ] |
-| 12 | Final Response | Report completed work, verification results, and unresolved issues accurately. | `guides/rules/final-response.md` [READ] |
-| 13 | Communication Style | Follow the user's language and preferred response style. Be concise and direct. | `guides/rules/communication-style.md` [READ] |
+| # | Rule | Reference |
+|---|---|---|
+| 1 | Core Principle: User Control | @rules/core-principle.md |
+| 2 | Question-Only Mode | @rules/question-only-mode.md |
+| 3 | Explicit Approval Required | @rules/explicit-approval.md |
+| 4 | Process Execution and Command Restrictions | @rules/process-execution.md |
+| 5 | File System Restrictions | @rules/file-system.md |
+| 6 | Project Inspection and Existing Changes | @rules/project-inspection.md |
+| 7 | Skills, MCP and Reference Documentation | @rules/skills-and-references.md |
+| 8 | Scope Containment | @rules/scope-containment.md |
+| 9 | Handling Uncertainty | @rules/handling-uncertainty.md |
+| 10 | Error Handling and Recovery | @rules/error-handling.md |
+| 11 | Cleanup | @rules/cleanup.md |
+| 12 | Final Response | @rules/final-response.md |
+| 13 | Communication Style | @rules/communication-style.md |

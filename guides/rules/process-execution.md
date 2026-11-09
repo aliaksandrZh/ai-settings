@@ -27,6 +27,3 @@ Before launching a process:
 4. Request approval.
 5. Wait for explicit approval.
 
-### Process lifecycle
-
-Tracking, stopping, and never terminating user-started processes are covered in (guides/rules/explicit-approval.md)[READ].

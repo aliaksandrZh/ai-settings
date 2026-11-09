@@ -55,23 +55,7 @@ fi
 
 cat >> "$TEMP_FILE" <<EOF
 <!-- BEGIN CLAUDE TOOLKIT -->
-# Mandatory Global Instructions
-
-The following files contain mandatory instructions governing your behavior.
-
 @$SOURCE_FILE
-
-You MUST follow these instructions in every task and throughout the entire session.
-
-Before responding to a request or taking any action:
-
-1. Consult the loaded instructions and identify all rules relevant to the current task.
-2. Follow all applicable rules, including approval requirements and restrictions.
-3. Do not treat these instructions as optional reference material.
-4. If a rule is unclear, inaccessible, or conflicts with another instruction, stop and ask the user for clarification.
-5. Never skip a rule because you consider it irrelevant without first evaluating its applicability.
-
-These instructions apply to all projects, tasks, tools, and delegated work.
 <!-- END CLAUDE TOOLKIT -->
 EOF
 
