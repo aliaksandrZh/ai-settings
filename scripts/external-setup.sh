@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$SCRIPT_DIR/config.sh"
+source "$SCRIPT_DIR/../external/config.sh"
 
 if command -v claude >/dev/null 2>&1; then
     echo "Configuring Claude Code..."
