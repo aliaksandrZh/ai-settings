@@ -28,6 +28,9 @@ CLAUDE_PLUGINS=(
 
   # https://claude.com/marketplace/plugins/frontend-design
   frontend-design
+  
+  # https://claude.com/marketplace/plugins/skill-creator
+  skill-creator
 )
 
 
