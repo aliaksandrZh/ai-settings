@@ -40,6 +40,8 @@ root/
 │   │   │   └── DependencyInjection.cs # Registration of Application services in DI
 │   │   │
 │   │   ├── Infrastructure/          # 3. Infrastructure layer (DB, external services)
+│   │   │   ├── Common/              # Shared infrastructure concerns (base classes, abstractions, constants)
+│   │   │   │   └── Extensions/      # Infrastructure-specific extension methods (DI registration, EF Core configuration)
 │   │   │   ├── Persistence/         # EF Core implementation
 │   │   │   │   ├── Configurations/  # Fluent API table configurations (IEntityTypeConfiguration)
 │   │   │   │   ├── Interceptors/    # Interceptors (Audit, Soft Delete)
@@ -54,6 +56,8 @@ root/
 │   │   │   └── DependencyInjection.cs # Registration of Infrastructure and EF Core services in DI
 │   │   │
 │   │   └── Api/                     # 4. Presentation layer (Entry Point)
+│   │   │   ├── Common/              # Shared API concerns (request/response models, filters, constants)
+│   │   │   │   └── Extensions/      # API-specific extension methods (endpoint registration, middleware configuration, service setup)
 │   │       ├── Endpoints/           # Minimal API Endpoints (grouped by features)
 │   │       ├── Middleware/          # Global error handling (Global Exception Handler)
 │   │       ├── Program.cs           # Entry point and DI container setup
